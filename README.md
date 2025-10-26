@@ -1,2 +1,46 @@
-# git-repository
-Instructions on how to carry out actions on Git and GitHub
+# Git Instructions
+## Create a Repository that is Synced to a Local Folder
+- On GitHub, create a repository with no `README.md`
+- Click on 'Create' and copy the web URL or password-protected SSH key 
+- Navigate to the folder on local PC
+- In a Git Bash, terminal run the following:
+```git
+git init
+git remote add origin {link to repo}
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+```
+- Now, a README.md can be created
+
+## Commit and Push Changes
+```git
+git add .
+git commit -m "Message here"
+git push
+```
+
+## Pull Changes
+```git
+git pull
+```
+
+## Fork a Repository
+- Navigate to the repository to be forked
+- Go to the forked version of this and copy the web URL or password-protected SSH key 
+- In a Git Bash terminal, run the following:
+```git
+git clone {link to repository}
+cd {repository-name}
+```
+
+## Merge a Repository
+- In a Git Bash terminal, run the following:
+```git
+git remote add upstream {link to original repository}
+git fetch upstream
+git push upstream main:fork-main
+```
+- Then, go to the original repository on GitHub and approve the Pull Request
+- Merge fork-main to main
+- Delete fork-main
