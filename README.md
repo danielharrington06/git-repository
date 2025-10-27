@@ -44,3 +44,22 @@ git push upstream main:fork-main
 - Then, go to the original repository on GitHub and approve the Pull Request
 - Merge fork-main to main
 - Delete fork-main
+
+## Create a New Branch
+- To create a new branch:
+```git
+git branch <branch-name>
+git switch -c <branch-name>
+git status #(check that * is next to <branch-name>
+```
+
+## Push from a New Branch
+```git
+git push -u origin <branch-name>
+# from now on git push can be used
+```
+
+## Merge back to main
+- Go on GitHub
+- There should be an option to pull request
+- Merge
