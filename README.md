@@ -68,4 +68,10 @@ git push -u origin <branch-name>
 ## Merge back to main
 - Go on GitHub
 - There should be an option to pull request
-- Merge
+- Merge the branches, resolving conflicts if necessary
+- The old branch can now be deleted safely
+
+## Set Default Branch to Default to `main`
+```git
+git config --global init.defaultBranch main
+```
