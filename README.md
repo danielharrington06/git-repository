@@ -13,6 +13,12 @@ git push -u origin main
 ```
 - Now, a README.md can be created
 
+## Remove Git Tracking from a Directory
+Navigate to the directory in a Git Bash terminal and run the following:
+```git
+rm -rf .git
+```
+
 ## Commit and Push Changes
 ```git
 git add .
