@@ -77,7 +77,6 @@ git config --global init.defaultBranch main
 ```
 ## Revert to Previous Commit
 ```bash
-git revert <commit_hash>..HEAD
 git revert --no-commit <commit_hash>..HEAD
 git commit -m "Revert to <commit_hash> state"  # single combined commit
 git push origin main
